@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse</title>
+        <link rel="icon" href="../Landing/img/FAVICON.png" sizes="64x64">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+
+    <body>
+        <div class="container bg-light Login_Container">
+            <div class="px-2 py-5 row d-flex justify-content-center">
+                <div class="col-6">
+                    <div class="container mx-3">
+                        <h4 class="fs-4"><b>Regístrate y empieza tú carrera en la tecnología</b></h4>
+                        <form class="mt-4">
+                            <div class="mb-4">
+                                <label for="InputEmail1" class="form-label">Nombre de usuario:</label>
+                                <input type="text" class="form-control txtId" id="InputEmail1">
+                                <div id="emailHelp" class="form-text">Ingresa un nombre de usuario.
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="InputEmail2" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control txtEm" id="InputEmail2"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Necesitas un correo electrónico.
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="InputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control txtKey" id="InputPassword1">
+                                <div id="emailHelp" class="form-text">Tu clave debe tener mínimo 5 caracteres,
+                                    una mayúscula, una minúscula y un número.
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <a class="d-flex justify-content-end  my-3 link fs-5" href="login.html">
+                                        Iniciar sesión.
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div class="send mt-5">
+                                        <a class="btn btn-secondary mx-3 px-5 py-4 link styleHover" role="button"
+                                            id="submit">Crear cuenta</a>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center col-5 mx-5">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tfb3estd.json"
+                    background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+                </lottie-player>
+            </div>
+        </div>
+
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="js/services/SignUpServices.js"></script>
+        <script src="js/controller/SignupController.js"></script>
+    </body>
+
+</html>

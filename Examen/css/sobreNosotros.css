@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='720' preserveAspectRatio='none' viewBox='0 0 1440 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1278%26quot%3b)' fill='none'%3e%3crect width='1440' height='720' x='0' y='0' fill='url(%23SvgjsLinearGradient1279)'%3e%3c/rect%3e%3cpath d='M1440 0L1059.92 0L1440 52.78z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1059.92 0L1440 52.78L1440 355.65999999999997L933.7600000000001 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M933.76 0L1440 355.65999999999997L1440 375.71999999999997L651.76 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M651.76 0L1440 375.71999999999997L1440 533.88L612.79 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 720L98.01 720L0 391.42z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 391.42L98.01 720L240.05 720L0 265.21000000000004z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 265.21000000000004L240.05 720L783.3700000000001 720L0 180.56000000000003z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 180.56000000000006L783.3700000000001 720L983.3600000000001 720L0 165.58000000000007z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1278'%3e%3crect width='1440' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='50%25' x2='100%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1279'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(70%2c 21%2c 181%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 2.5em;
+  margin-top: 10%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#section-counter {
+  position: relative;
+  z-index: 0;
+}
+
+.ftco-counter {
+  margin-top: 5em;
+  overflow-x: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.ftco-counter .block-18 {
+  display: block;
+  width: 100%;
+}
+
+.ftco-counter .text {
+  position: relative;
+}
+
+
+.ftco-counter .text .number {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 3em;
+  color: #003c529f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ftco-counter .text span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffffb3;
+}
+
+.infoVirtual {
+  text-align: center;
+  font-size: 23px;
+}
+
+.infoVirtual p {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  line-height: 45px;
+  margin: 1.5em;
+}
+
+.styleFont {
+  color: #550ce9;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+.contacto {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
+
+.end {
+  margin-top: 6%;
+}
+
+.Cursos {
+  text-decoration: none;
+  color: #F46A61;
+}
+
+.Cursos:hover {
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  color: #550ce9;
+}

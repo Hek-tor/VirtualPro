@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cursos</title>
+        <link rel="icon" href="../Landing/img/FAVICON.png" sizes="64x64">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+        <link rel="stylesheet" href="css/galeria.css">
+        <link rel="stylesheet" href="css/cursos.css">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top" id="barraNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_1" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_2" href="sobreNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_3" href="cursos.html">Cursos disponibles</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_4" href="contactenos.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item dropdown text-secondary mx-5">
+                            <a class="nav-link dropdown-toggle nav_link_5" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav_link_6" href="planes.html">Planes de estudio</a></li>
+                                <li><a class="dropdown-item nav_link_7" href="eventos.html">Eventos</a></li>
+                                <li><a class="dropdown-item nav_link_9" href="galeria.html">Galería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_8" href="../index.html">
+                                Regresar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-box-arrow-right mx-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a href="#" language='Spanish' class="active btnTraslate" id="LangEs">
+                                <img class="img-fluid idioma" src="img/es.webp" alt="Español">
+                            </a>
+                            <a href="#" language='English' class="btnTraslate" id="LangEng">
+                                <img class="img-fluid" src="img/eu.webp" alt="Ingles">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="search">
+            <select class="mx-3 search_options" name="search" id="Categorias">
+                <option value="Categories" selected class="option_1">Categorías</option>
+                <option value="Software" class="option_2">Desarrollo de Software</option>
+                <option value="Business" class="option_3">Gestión de negocios</option>
+                <option value="Agile" class="option_4">Metodologías ágiles</option>
+            </select>
+            <select class="mx-5 search_options" name="search" id="Opciones">
+                <option value="Opciones" class="option_5">Ofertas</option>
+                <option value="Descuentos" class="option_6">Descuentos</option>
+            </select>
+        </div>
+        <section class="lista__Cursos">
+            <div class="sub_Menu"></div>
+            <div class="row sub__Content">
+                <div class="col-lg-3 cards">
+                    <div class="card software bg-dark text-light p-3 descuento" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso1.webp">
+                                <img src="img/Cursos/Curso1.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_1">Backend con Javascript</h4>
+                            <p class="card-text parrafo_1">En este curso aprenderás a dominar el backend con
+                                uno de los lenguajes de programación más usados en el mundo.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_1"><small class="text-muted">22 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra1">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info1">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card business bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso5.webp">
+                                <img src="img/Cursos/Curso5.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_2">Gestión de datos</h4>
+                            <p class="card-text parrafo_2">Para obtener los mejores resultados en tu organización
+                                necesitas llevar un buen control de datos. Este curso te ayudará</p>
+                            <p class="price fs-5">$19.99</p>
+                            <p class="card-text info_2"><small class="text-muted">10 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra2">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info2">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card software bg-dark text-light p-3 descuento" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso3.webp">
+                                <img src="img/Cursos/Curso3.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_3">Interfaz con Bootstrap</h4>
+                            <p class="card-text parrafo_3">Si aprendes a usar Bootstrap podrás crear una
+                                interfaz limpia y responsive para los usuarios de tu web.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_3"><small class="text-muted">21 horas de contenido | Español |
+                                    Proyecto</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra3">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info3">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 cards">
+                    <div class="card agile bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso9.webp">
+                                <img src="img/Cursos/Curso9.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_4">Pizarra digital Miro</h4>
+                            <p class="card-text parrafo_4">Este curso te enseña a dominar la plataforma
+                                Miro para gestionar tus metodologías de trabajo.</p>
+                            <p class="price fs-5">$19.99</p>
+                            <p class="card-text info_4"><small class="text-muted">9 horas de contenido | Español |
+                                    Proyecto</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra4">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info4">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sub__Content">
+                <div class="col-lg-3 cards">
+                    <div class="card software bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso2.webp">
+                                <img src="img/Cursos/Curso2.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_5">Aprende Python</h4>
+                            <p class="card-text parrafo_5">Con este curso aprendarás a programar en Python
+                                para tener una buena gestión de datos.</p>
+                            <p class="price fs-5">$23.99</p>
+                            <p class="card-text info_5"><small class="text-muted">20 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra5">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info5">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card business bg-dark text-light p-3 descuentoB" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso8.webp">
+                                <img src="img/Cursos/Curso8.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_6">Liderazgo empresarial</h4>
+                            <p class="card-text parrafo_6">Actualmente muchas plataformas digitales te ofrecen
+                                la posibilidad de mejorar tu liderazgo, aprende a usarlas.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_6"><small class="text-muted">24 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra6">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info6">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card agile bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso11.webp">
+                                <img src="img/Cursos/Curso11.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_7">DevOps con Azure</h4>
+                            <p class="card-text parrafo_7">Con DevOps y las opciones de gestionar versiones con Azure
+                                podrás mejorar el entorno de tus proyectos.
+                            </p>
+                            <p class="price fs-5">$23.99</p>
+                            <p class="card-text info_7"><small class="text-muted">12 horas de contenido | Español |
+                                    Proyecto</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra7">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info7">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 cards">
+                    <div class="card business bg-dark text-light p-3 descuentoB" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso6.webp">
+                                <img src="img/Cursos/Curso6.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_8">Excel para principiantes</h4>
+                            <p class="card-text parrafo_8">Excel es una increible herramienta para tus labores
+                                profesionales en este curso puedes aprender a sacarle provecho.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_8"><small class="text-muted">20 horas de contenido | Español |
+                                    Proyecto</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra8">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info8">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sub__Content">
+                <div class="col-lg-3 cards">
+                    <div class="card software bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso4.webp">
+                                <img src="img/Cursos/Curso4.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_9">Conceptos para API'S</h4>
+                            <p class="card-text parrafo_9">Con la plataforma Postman aprenderás conceptos
+                                sobre API necesarios para aplicarlos en entornos de desarrollo.</p>
+                            <p class="price fs-5">$8.99</p>
+                            <p class="card-text info_9"><small class="text-muted">9 horas de contenido | Español |
+                                    Proyecto</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra9">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info9">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card agile bg-dark text-light p-3 descuento descuentoM" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso10.webp">
+                                <img src="img/Cursos/Curso10.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_10">Metodología Scrum</h4>
+                            <p class="card-text parrafo_10">En este curso aprenderás Scrum esto te ayudará
+                                a manejar de mejor manera las buenas prácticas en un proyecto.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_10"><small class="text-muted">48 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra10">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info10">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 cards">
+                    <div class="card business bg-dark text-light p-3" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso7.webp">
+                                <img src="img/Cursos/Curso7.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_11">Gestión de finanzas</h4>
+                            <p class="card-text parrafo_11">Aprendiendo diversas herramientas tecnológicas podrás llevar
+                                un mejor control económico en tu empresa.</p>
+                            <p class="price fs-5">$19.99</p>
+                            <p class="card-text info_11"><small class="text-muted">12 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra11">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info11">Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 cards">
+                    <div class="card agile bg-dark text-light p-3 descuentoM" style="width: 350px;">
+                        <div class="tz-gallery">
+                            <a href="img/Cursos/Curso12.webp">
+                                <img src="img/Cursos/Curso12.webp" class="card-img-top" alt="Logo de cursos">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title titulo_12">Gestiones con Jira</h4>
+                            <p class="card-text parrafo_12">En este curso aprendarás Jira, para la gestión de
+                                proyectos de la mano con metodologías ágiles.</p>
+                            <p class="price fs-5"><span>$50.00</span> $25.00</p>
+                            <p class="card-text info_12"><small class="text-muted">12 horas de contenido | Español |
+                                    Certificado</small></p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success card_Btn btn_Compra12">Comprar</button>
+                            <button type="button" class="btn btn-warning mx-4 card_Btn btn_Info12">Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullSite"></section>
+        <footer class="bg-secondary p-3 mt-5 end">
+            <div class="datos mt-5">
+                <h3 class="contacto">Información de contacto</h3>
+                <address class="footer__Direccion text-light">
+                    <p>
+                        Costa Rica</br>
+                        San José, Escazú.
+                    </p>
+                    <article class="institucional__contacto">
+                        <p>
+                            <a href="tel:+50625561213" class="institucional__contacto-telefono">+506
+                                25561213</a> o
+                            <a href="mailto:contato@VirtualPro.co.cr"
+                                class="institucional__contacto-email">contacto@VirtualPro.co.cr</a>
+                        </p>
+                    </article>
+                </address>
+            </div>
+            <div class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.724326855126!2d-84.15427031523024!3d9.91887197352963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc89ffb80fe9%3A0x24fbc782c723412d!2zU2FuIEpvc8OpLCBFc2NhesO6!5e0!3m2!1ses-419!2scr!4v1668633438869!5m2!1ses-419!2scr"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+        <script src="js/idiomaCursos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/cursos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
+        <script>
+            baguetteBox.run('.tz-gallery');
+        </script>
+    </body>
+
+</html>

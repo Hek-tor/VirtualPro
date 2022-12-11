@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='720' preserveAspectRatio='none' viewBox='0 0 1440 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1278%26quot%3b)' fill='none'%3e%3crect width='1440' height='720' x='0' y='0' fill='url(%23SvgjsLinearGradient1279)'%3e%3c/rect%3e%3cpath d='M1440 0L1059.92 0L1440 52.78z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1059.92 0L1440 52.78L1440 355.65999999999997L933.7600000000001 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M933.76 0L1440 355.65999999999997L1440 375.71999999999997L651.76 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M651.76 0L1440 375.71999999999997L1440 533.88L612.79 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 720L98.01 720L0 391.42z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 391.42L98.01 720L240.05 720L0 265.21000000000004z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 265.21000000000004L240.05 720L783.3700000000001 720L0 180.56000000000003z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 180.56000000000006L783.3700000000001 720L983.3600000000001 720L0 165.58000000000007z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1278'%3e%3crect width='1440' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='50%25' x2='100%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1279'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(70%2c 21%2c 181%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Oferta__Nosotros {
+    margin-top: 200px;
+    padding: 2%;
+}
+
+.logos {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h4 {
+    padding: 5px;
+}
+
+#tabla__Precios {
+    line-height: 50px;
+    margin-top: 11%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tabla2 {
+    text-align: center;
+    position: relative;
+    box-shadow: 0px -6px 20px 12px #003c5260;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.tabla {
+    background-color: #fdfffc;
+    padding: 80px 50px;
+}
+
+.precio {
+    position: relative;
+}
+
+.dolar {
+    color: #003c52;
+    font-size: 25px;
+    position: absolute;
+    left: 45px;
+}
+
+.numero {
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+    font-size: 3em;
+    color: #F46A61;
+}
+
+.empresa {
+    color: #e48f21;
+}
+
+.estandar {
+    color: #8cb629;
+}
+
+.platinum {
+    color: #084727;
+}
+
+.mes {
+    color: #003c528e;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.beneficios {
+    font-size: 1.2em;
+    color: #003c52;
+}
+
+.boton {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #F46A61;
+    padding: 1% 10%;
+    text-decoration: none;
+    color: #111;
+    margin-top: 20px;
+}
+
+.principalSuperior {
+    border-radius: 15px 15px 0px 0px;
+    top: -60px;
+    position: absolute;
+    background-color: #fdfffc;
+    width: 523px;
+    height: 80px;
+    left: 0px;
+}
+
+.principalInferior {
+    border-radius: 0px 0px 15px 15px;
+    bottom: -25px;
+    position: absolute;
+    background-color: #fdfffc;
+    width: 523px;
+    height: 80px;
+    left: 0;
+}
+
+.secundario {
+    border-radius: 15px 0px 0px 15px;
+    height: 650px;
+}
+
+.tercero {
+    border-radius: 0px 15px 15px 0px;
+    height: 650px;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos</title>
+        <link rel="icon" href="../Landing/img/FAVICON.png" sizes="64x64">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/eventos.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top" id="barraNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_1" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_2" href="sobreNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_3" href="cursos.html">Cursos disponibles</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_4" href="contactenos.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item dropdown text-secondary mx-5">
+                            <a class="nav-link dropdown-toggle nav_link_5" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav_link_6" href="planes.html">Planes de estudio</a></li>
+                                <li><a class="dropdown-item nav_link_7" href="eventos.html">Eventos</a></li>
+                                <li><a class="dropdown-item nav_link_9" href="galeria.html">Galería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_8" href="../index.html">
+                                Regresar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-box-arrow-right mx-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a href="#" language='Spanish' class="active btnTraslate" id="LangEs">
+                                <img class="img-fluid idioma" src="img/es.webp" alt="Español">
+                            </a>
+                            <a href="#" language='English' class="btnTraslate" id="LangEng">
+                                <img class="img-fluid" src="img/eu.webp" alt="Ingles">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="text-light text-center titl_0">Nuestros eventos</h1>
+        <section class="tabla__Eventos container">
+
+            <div class="tab tam1 panel">
+                <button class="tablinks evt_1" onclick="cambioVista(event,'organizacion')">Organización de
+                    eventos</button>
+                <button class="tablinks evt_2" onclick="cambioVista(event,'presenciales')">Eventos presenciales</button>
+                <button class="tablinks evt_3" onclick="cambioVista(event,'virtuales')">Eventos virtuales</button>
+            </div>
+
+            <div id="organizacion" class="tabcontent">
+                <p class="texto__Eventos parra_1">
+                    Además de ser una plataforma virtual tenemos como misión fortalecer y generar el
+                    crecimiento de la comunidad de personas apasionadas por el desarrollo de la tecnología.
+                    Es por eso que organizamos eventos presenciales y virtuales para el disfrute de todos
+                    los que quieran integrarse en esta área. En las otras pestañas brindamos más información
+                    sobre cada uno de nuestros diferentes eventos.
+                </p>
+            </div>
+            <div id="presenciales" class="tabcontent">
+                <p class="texto__Eventos parra_2">
+                    Nuestros eventos presenciales tienen como objetivo generar Networking y que todos los
+                    aficionados por el mundo del software tengan un espacio dedicado para poder mostrar sus
+                    proyectos, portafolios y repositorios. Además siempre contamos con charlas de expertos para
+                    aportar conocimientos nuevos a la comunidad. Mantente al tanto de nuestras noticias para
+                    saber donde será nuestro siguiente evento presencial abierto a todo el público.
+                </p>
+            </div>
+
+            <div id="virtuales" class="tabcontent">
+                <p class="texto__Eventos parra_3">
+                    Para todos aquellos que no puedan viajar a un evento presencial les informamos que también
+                    contamos con actividades virtuales como charlas, live-conding y entrevistas a influyentes
+                    de nuestra comunidad. Estos eventos son gratuitos y puedes verlos desde nuestra aplicación web
+                    Así que te invitamos a estar pendiente de las proximas fechas para que puedas disfrutar de estas
+                    maravillosas actividades desde la comodidad de tu casa.
+                </p>
+            </div>
+        </section>
+        <section class="Eventos__Galeria">
+            <h2 class="text-light text-center titl_1">Actividades</h2>
+            <div class="text-center p-3 fs-4">
+                <p class="text-light parra_4">Les brindamos diversas actividades para que esten atentos a nuestros
+                    proximos
+                    eventos
+                    y ofertas</p>
+                <p class="text-light parra_5">que vamos a tener en el siguiente año 2023</p>
+            </div>
+            <div class="container text-center">
+                <p>
+                    <img src="img/Eventos/evento_0.jpg" name="thumb" id="imagenes" class="img-fluid"><br><br>
+                </p>
+                <button class="btn btn-secondary btn-lg" onclick="cambiar(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </button>
+                <button class="btn btn-secondary btn-lg" onclick="cambiar(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="eventos__Encuesta">
+            <h1 class="text-light text-center titl_2">Califica nuestros eventos</h1>
+            <p class="text-light text-center fs-5 parra_6">Si ya has tenido la oportunidad de participar en uno</p>
+            <p class="text-light text-center fs-5 parra_7">de nuestros eventos te invitamos a llenar la siguiente
+                encuesta.</p>
+            <div class="container shadow p-5 mt-5 bg-light  d-flex flex-column fs-4 cards">
+                <h3 class="fs-5 titl_3">Calidad de las charlas impartidas:</h3>
+                <div class="d-flex justify-content-evenly p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="calidad" id="MaloProd">
+                        <label class="form-check-label box_1" for="calidad">
+                            Mala
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="calidad" id="BuenoProd">
+                        <label class="form-check-label box_2" for="calidad">
+                            Regular
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="calidad" id="ExcelenteProd">
+                        <label class="form-check-label box_3" for="calidad">
+                            Excelente
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="container shadow p-5 mt-5 bg-light  d-flex flex-column fs-4 cards">
+                <h3 class="fs-5 titl_4">Actividades realizadas:</h3>
+                <div class="d-flex justify-content-evenly p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="servicio" id="MaloServ">
+                        <label class="form-check-label box_4" for="calidad">
+                            Malas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="servicio" id="BuenoServ">
+                        <label class="form-check-label box_5" for="calidad">
+                            Regulares
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="servicio" id="ExcelenteServ">
+                        <label class="form-check-label box_6" for="calidad">
+                            Excelentes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="container shadow p-5 mt-5 bg-light  d-flex flex-column fs-4 cards">
+                <h3 class="fs-5 titl_5">Organización del evento:</h3>
+                <div class="d-flex justify-content-evenly p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="precio" id="MaloPrec">
+                        <label class="form-check-label box_7" for="calidad">
+                            Malo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="precio" id="BuenoPrec">
+                        <label class="form-check-label box_8" for="calidad">
+                            Regular
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="precio" id="ExcelentePrec">
+                        <label class="form-check-label box_9" for="calidad">
+                            Excelente
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button type="button" class="btn btn-secondary btn-lg px-4 py-3 mb-4 btnEncuesta" id="Encuesta">Enviar
+                    calificación</button>
+            </div>
+        </section>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btnScroll">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </i>
+        </button>
+        <footer class="bg-secondary p-3 end">
+            <div class="datos mt-5">
+                <h3 class="contacto">Información de contacto</h3>
+                <address class="footer__Direccion text-light">
+                    <p>
+                        Costa Rica</br>
+                        San José, Escazú.
+                    </p>
+                    <article class="institucional__contacto">
+                        <p>
+                            <a href="tel:+50625561213" class="institucional__contacto-telefono">+506
+                                25561213</a> o
+                            <a href="mailto:contato@VirtualPro.co.cr"
+                                class="institucional__contacto-email">contacto@VirtualPro.co.cr</a>
+                        </p>
+                    </article>
+                </address>
+            </div>
+            <div class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.724326855126!2d-84.15427031523024!3d9.91887197352963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc89ffb80fe9%3A0x24fbc782c723412d!2zU2FuIEpvc8OpLCBFc2NhesO6!5e0!3m2!1ses-419!2scr!4v1668633438869!5m2!1ses-419!2scr"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+        <script src="js/idiomaEvent.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/eventos.js"></script>
+    </body>
+
+</html>

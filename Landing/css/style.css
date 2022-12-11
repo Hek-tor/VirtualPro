@@ -1,0 +1,81 @@
+.titulo {
+    top: 20%;
+    position: absolute;
+    color: #f46a61;
+    font-size: 10em;
+    font-family: 'Expletus Sans', cursive;
+    letter-spacing: 8px;
+}
+
+.landingBody {
+    width: 100%;
+    height: 80vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('../img/background.webp');
+}
+
+.btnContent {
+    font-family: 'Expletus Sans', cursive;
+    transform: translate(0px, 50vh);
+}
+
+.styleHover {
+    font-size: 1.9em;
+    padding: 2%;
+    border: 5px solid #f46a61;
+    outline: none;
+    color: #ffff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.styleHover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 11px;
+}
+
+.styleHover:hover:before {
+    opacity: 1;
+}
+
+.styleHover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

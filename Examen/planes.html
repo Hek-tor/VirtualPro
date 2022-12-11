@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planes de pago</title>
+        <link rel="icon" href="../Landing/img/FAVICON.png" sizes="64x64">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/planes.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top" id="barraNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_1" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_2" href="sobreNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_3" href="cursos.html">Cursos disponibles</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_4" href="contactenos.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item dropdown text-secondary mx-5">
+                            <a class="nav-link dropdown-toggle nav_link_5" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav_link_6" href="planes.html">Planes de estudio</a></li>
+                                <li><a class="dropdown-item nav_link_7" href="eventos.html">Eventos</a></li>
+                                <li><a class="dropdown-item nav_link_9" href="galeria.html">Galería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_8" href="../index.html">
+                                Regresar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-box-arrow-right mx-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a href="#" language='Spanish' class="active btnTraslate" id="LangEs">
+                                <img class="img-fluid idioma" src="img/es.webp" alt="Español">
+                            </a>
+                            <a href="#" language='English' class="btnTraslate" id="LangEng">
+                                <img class="img-fluid" src="img/eu.webp" alt="Ingles">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btnScroll">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                </svg>
+            </i>
+        </button>
+        <section id="tabla__Precios">
+            <div class="tabla secundario">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-hexagon logos" viewBox="0 0 16 16">
+                    <path
+                        d="M14 4.577v6.846L8 15l-6-3.577V4.577L8 1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" />
+                </svg>
+                <h4 class="Plan_1">Estándar</h4>
+                <div class="precio">
+                    <span class="dolar">$</span>
+                    <span class="numero estandar">39.99</span>
+                    <span class="mes Mes_1">Mensual</span>
+                </div>
+                <div class="beneficios">
+                    <p class="Ben_1">Acceso a todos los cursos de la plataforma.</p>
+                    <p class="Ben_2">Anuncios de otros instructores.</p>
+                    <p class="Ben_3">Espacio de 500MB para guardar material.</p>
+                    <p class="Ben_4">Calidad de video en 720p.</p>
+                </div>
+                <a class="boton add_1" href="#">COMPRAR</a>
+            </div>
+            <div class="tabla text-center" id="tabla2">
+                <div class="principalSuperior"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-gem logos" viewBox="0 0 16 16">
+                    <path
+                        d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
+                </svg>
+                <h4 class="Plan_2">Empresarial</h4>
+                <div class="precio">
+                    <span class="dolar">$</span>
+                    <span class="numero empresa">69.99</span>
+                    <span class="mes Mes_2">Mensual</span>
+                </div>
+                <div class="beneficios">
+                    <p class="Ben_5">Acceso a todos los cursos de la plataforma.</p>
+                    <p class="Ben_6">Instructores en tiempo real disponibles.</p>
+                    <p class="Ben_7">Todos los datos guardados en la nube.</p>
+                    <p class="Ben_8">Calidad de video en 4K</p>
+                </div>
+                <a class="boton add_2" href="#">COMPRAR</a>
+                <div class="principalInferior"></div>
+            </div>
+            <div class="tabla tercero">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-x-diamond logos" viewBox="0 0 16 16">
+                    <path
+                        d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z" />
+                </svg>
+                <h4 class="Plan_3">Platinum</h4>
+                <div class="precio">
+                    <span class="dolar">$</span>
+                    <span class="numero platinum">49.99</span>
+                    <span class="mes Mes_3">Mensual</span>
+                </div>
+                <div class="beneficios">
+                    <p class="Ben_9">Acceso a todos los cursos de la plataforma.</p>
+                    <p class="Ben_10">Sin anuncios ni contenido patrocinado.</p>
+                    <p class="Ben_11">Espacio de 1TB para guardar material.</p>
+                    <p class="Ben_12">Calidad de video en 1080p</p>
+                </div>
+                <a class="boton add_3" href="#">COMPRAR</a>
+            </div>
+        </section>
+
+        <section class="Oferta__Nosotros bg-light">
+            <h2 class="text-dark text-center py-5 mt-2 razon">¿Por qué elegir Virtual Pro?</h2>
+            <p class="text-center text-dark fs-4 Oferta1">Ofrecemos una amplia gama de cursos para convertir a nuestros
+                estudiantes
+                en</p>
+            <p class="text-center text-dark fs-4 Oferta2">personas hábiles en el área de la tecnología de la
+                infomarción.</p>
+            <div class="container d-flex justify-content-center py-3">
+                <button id="boton" onclick="ejecutar('video','youtube')" class="cursor mt-3 moreInfo">Ver video</button>
+            </div>
+            <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+                <div class="lightbox-container">
+                    <div class="lightbox-content">
+                        <button onclick="ocultar('video','youtube')" class="lightbox-close cursor">CERRAR | X</button>
+                        <div class="video-container">
+                            <iframe id="youtube" width="960" height="540"
+                                src="https://www.youtube.com/embed/bo7Nri6W82I?showinfo=0"
+                                title="VIDEO PUBLICITARIO DE EDUCACIÓN ONLINE" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-secondary p-3">
+            <div class="datos mt-5">
+                <h3 class="sponsor__Tittle contacto">Información de contacto</h3>
+                <address class="footer__Direccion text-light">
+                    <p>
+                        Costa Rica</br>
+                        San José, Escazú.
+                    </p>
+                    <article class="institucional__contacto">
+                        <p>
+                            <a href="tel:+50625561213" class="institucional__contacto-telefono">+506
+                                25561213</a> o
+                            <a href="mailto:contato@VirtualPro.co.cr"
+                                class="institucional__contacto-email">contacto@VirtualPro.co.cr</a>
+                        </p>
+                    </article>
+                </address>
+            </div>
+            <div class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.724326855126!2d-84.15427031523024!3d9.91887197352963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc89ffb80fe9%3A0x24fbc782c723412d!2zU2FuIEpvc8OpLCBFc2NhesO6!5e0!3m2!1ses-419!2scr!4v1668633438869!5m2!1ses-419!2scr"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+        <script src="js/idiomaPlanes.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contáctenos</title>
+        <link rel="icon" href="../Landing/img/FAVICON.png" sizes="64x64">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/contactenos.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top" id="barraNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_1" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_2" href="sobreNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_3" href="cursos.html">Cursos disponibles</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_4" href="contactenos.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item dropdown text-secondary mx-5">
+                            <a class="nav-link dropdown-toggle nav_link_5" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav_link_6" href="planes.html">Planes de estudio</a></li>
+                                <li><a class="dropdown-item nav_link_7" href="eventos.html">Eventos</a></li>
+                                <li><a class="dropdown-item nav_link_9" href="galeria.html">Galería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link nav_link_8" href="../index.html">
+                                Regresar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-box-arrow-right mx-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a href="#" language='Spanish' class="active btnTraslate" id="LangEs">
+                                <img class="img-fluid idioma" src="img/es.webp" alt="Español">
+                            </a>
+                            <a href="#" language='English' class="btnTraslate" id="LangEng">
+                                <img class="img-fluid" src="img/eu.webp" alt="Ingles">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="formulario container shadow mb-5 py-3 bg-body">
+            <div class="p-5  row d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <div class="container mx-3 my-5">
+                        <h2 class="sub_1">Información de contacto</h2>
+                        <p class="mt-4 sub_2">
+                            Usa este formulario para recibir ayuda de nuestros asesores.<br>
+                            ¡Será un gusto atenderte!
+                        </p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="InputEmail" class="form-label sub_3"><b>Correo electrónico</b></label>
+                                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text sub_4">Necesitas un correo para enviar el mensaje.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="InputAsunto" class="form-label sub_5"><b>Consulta</b></label>
+                                <input type="text" class="form-control" id="InputAsunto">
+                                <div id="emailHelp" class="form-text sub_6">Escríbenos tú consulta en este espacio.
+                                </div>
+                                <a class="d-flex justify-content-end text-secondary fs-5 sub_7" href="#">Consultas
+                                    frecuentes.</a>
+                                <div class="mt-5 mb-2 form-check">
+                                    <input type="checkbox" class="form-check-input" checked="checked">
+                                    <label class="form-check-label sub_8" for="Check">Acepto las políticas de
+                                        privacidad de la empresa.</label>
+                                </div>
+                                <button type="submit" class="btn btn-secondary btn-lg px-4 py-3 mt-3 fs-5 sub_9"
+                                    id="Send">Enviar consulta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_8autcbbt.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-secondary p-3 end">
+            <div class="datos mt-5">
+                <h3 class="contacto">Información de contacto</h3>
+                <address class="footer__Direccion text-light">
+                    <p>
+                        Costa Rica</br>
+                        San José, Escazú.
+                    </p>
+                    <article class="institucional__contacto">
+                        <p>
+                            <a href="tel:+50625561213" class="institucional__contacto-telefono">+506
+                                25561213</a> o
+                            <a href="mailto:contato@VirtualPro.co.cr"
+                                class="institucional__contacto-email">contacto@VirtualPro.co.cr</a>
+                        </p>
+                    </article>
+                </address>
+            </div>
+            <div class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.724326855126!2d-84.15427031523024!3d9.91887197352963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc89ffb80fe9%3A0x24fbc782c723412d!2zU2FuIEpvc8OpLCBFc2NhesO6!5e0!3m2!1ses-419!2scr!4v1668633438869!5m2!1ses-419!2scr"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+        <script src="js/idiomaContacto.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/contactenos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
